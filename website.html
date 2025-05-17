@@ -66,6 +66,21 @@
             font-size: 1rem;
             color: #555;
         }
+        .anniversary {
+            font-family: 'Great Vibes', cursive;
+            font-size: 1.8rem;
+            line-height: 1.8;
+            width: 80%;
+            margin: 30px auto;
+            color: #555;
+            text-align: justify;
+        }
+        .anniversary-title {
+            color: #ff3366;
+            font-size: 2.2rem;
+            font-family: 'Great Vibes', cursive;
+            margin-top: 50px;
+        }
     </style>
 </head>
 <body>
@@ -100,6 +115,29 @@
                 Ich liebe dich von ganzem Herzen.<br><br>
                 Dein Prinzesinen Bub
             </p>
+<br><br>
+        </div>
+	
+
+        <!-- Neuer Abschnitt für den 1. Jahrestag -->
+        <div class="anniversary-title">1. Jahrestag</div>
+        <div class="anniversary">
+            <p>
+                Liebe Mathilda,<br><br>
+                dieses eine Jahr mit dir war das schönste und bedeutungsvollste, das ich je erleben durfte. 
+                Du bist für mich viel mehr, als ich mir je hätte wünschen können, und ich bin unendlich dankbar, 
+                dass ich dich an meiner Seite habe.<br><br>
+                Ich weiß, dass unsere Beziehung nicht immer einfach ist. Auch dieses Jahr war nicht nur voller Höhen, 
+                sondern manchmal auch herausfordernd. Aber wenn ich all das mit einem einzigen Wort beschreiben müsste, 
+                wäre es: wundervoll. Denn am Ende überwiegt immer das Schöne – deine Liebe, dein Lachen, dein Herz.<br><br>
+                Durch dich habe ich zum ersten Mal das Gefühl, wirklich geliebt zu werden. Es sind oft die kleinen Gesten 
+                von dir, die mich tief berühren – so sehr, dass mir manchmal Tränen in die Augen steigen. Deine Nähe motiviert 
+                mich, ein besserer Mensch zu sein, damit ich der Freund sein kann, den du verdienst und dir wünschst.<br><br>
+                Ich liebe dich von ganzem Herzen – und ich freue mich auf viele weitere unvergessliche Jahre mit dir. 
+                Danke, dass es dich gibt.<br><br>
+                In Liebe,<br>
+                Dein Emad
+            </p>
         </div>
 
         <footer>
@@ -121,24 +159,14 @@
         }
 
         function writeText() {
-            ctx.fillStyle = "black"; // Schwarzer Text
+            ctx.fillStyle = "black";
             ctx.font = "26px 'Great Vibes', cursive";
             ctx.textAlign = "center";
-            ctx.fillText(
-                "Liebe Mathilda,", 450, 300
-            );
-            ctx.fillText(
-                "Mit dir sind die letzten 6 Monate", 450, 340
-            );
-            ctx.fillText(
-                "die schönsten meines Lebens gewesen.", 450, 380
-            );
-            ctx.fillText(
-                "Ich liebe dich von ganzem Herzen,", 450, 420
-            );
-            ctx.fillText(
-                "Dein Prinzessinnen Bub", 450, 460
-            );
+            ctx.fillText("Liebe Mathilda,", 450, 300);
+            ctx.fillText("Das vergangene Jahr mit dir", 450, 340);
+            ctx.fillText("war das schönste meines Lebens.", 450, 380);
+            ctx.fillText("Ich liebe dich von ganzem Herzen,", 450, 420);
+            ctx.fillText("Dein Prinzessinnen Bub", 450, 460);
         }
 
         window.onload = () => {
